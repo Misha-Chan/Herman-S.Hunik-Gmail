@@ -1,0 +1,17 @@
+/* Hunik Gmail theme v1 - old-Gmail look, cheap on the GPU.
+   Rules must stay flat (no @media): the injector can split on "}" if CSP blocks inline styles.
+   ASCII only. Selectors are a first guess (ARIA roles + common elements) and need tuning
+   against the real DOM: use the Volume Up dump described in the README. */
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);text-shadow:none!important;-webkit-transition:none!important;transition:none!important;-webkit-animation:none!important;animation:none!important}
+html,body{background:#fff!important;color:#222!important;font-family:Arial,Helvetica,sans-serif!important;font-size:15px!important;line-height:1.35!important}
+a{color:#15c!important;text-decoration:none!important}
+b,strong{color:#000!important}
+header,[role=banner]{background:#f1f1f1!important;border-bottom:1px solid #d6d6d6!important;box-shadow:none!important}
+nav,[role=navigation]{background:#fafafa!important;border-right:1px solid #e5e5e5!important;box-shadow:none!important}
+main,[role=main]{background:#fff!important}
+[role=listitem],[role=row],[role=option]{border-bottom:1px solid #ececec!important;background-color:#fff!important;box-shadow:none!important}
+[role=row]:active,[role=listitem]:active{background-color:#fff8d6!important}
+input[type=text],input[type=search],input[type=email],textarea{font-family:inherit!important;font-size:15px!important;border:1px solid #ccc!important;border-radius:2px!important;background:#fff!important;box-shadow:none!important}
+input[type=button],input[type=submit],button{font-family:inherit!important;border:1px solid #d0d0d0!important;border-radius:2px!important;background:#f5f5f5!important;color:#444!important;box-shadow:none!important}
+[aria-label="Compose"],[aria-label*="Compose"]{background:#d14836!important;color:#fff!important;border-radius:2px!important;box-shadow:none!important}
+[role=dialog],[role=menu]{border:1px solid #ccc!important;box-shadow:none!important;border-radius:2px!important}
